@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Calculator Display</title>
+  <style>
+     body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial;
+        background-color: #ffffff;
+
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+  </style>
+  </head>
+  <body>
+    <div class="box" id="result"></div>
+    <script>
+        //plshelp variables,
+        var a = 60;
+        var b = 7; 
+        var addition = a + b;
+        var subtraction = a - b;
+        var multiplication = a * b;
+        var division = a / b;
+        
+
+    
+       // Display Results finally pls work pls pls
+       document.getElementById("result").innerHTML = "<h2>Basic Calculator</h2>" + "<h4>ADDITION</h4>" +
+          a + " + " + b + " = " + addition + "<br>" + "<h4>SUBTRACTION</h4>"
+          + a + " - " + b + " = " + subtraction + "<br>" + "<h4>MULTIPLICATION</h4>" +
+          a + " * " + b + " = " + multiplication + "<br>" + "<h4>DIVISION</h4>" +
+         a + " / " + b + " = " + division;
+
+    </script>
+
+  </body>
+  </html>
